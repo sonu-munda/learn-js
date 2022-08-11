@@ -211,14 +211,15 @@ console.log(myarr.length);
 // let newlen=myarr.unshift("harry"); (newlen ek naya lenght dega agr unshift run jar rhe to)
 //console.log(newlen);
  
-//let toString= myarr; ( ye nai samaj aya)
-//console.log(myarr.toString);
-//console.log(myarr.lenght);
+let toString= myarr; //( ye nai samaj aya)
+console.log(myarr.toString());
+console.log(myarr.lenght);
 
 // d.sort
-/*let d=[1,2,0,123,231,213];
-console.log(d.sort);
-console.log(d);*/
+let d=[1,2,0,123,231,213];
+console.log(d);
+console.log(d.sort());
+
 
 //string Methods in js
 
@@ -241,7 +242,81 @@ console.log(mydate.getDate());
 console.log(mydate.getMinutes());
 console.log(mydate.getHours());
 
+// DOM Manipulation
+
+let elem =  document.getElementById("click");
+console.log(elem);
+
+//console.log(elem.innerHTML);
+//console.log(elem.innerText);
+
+// selecting using query (ye container ke element ko dikha deta h)
+
+sel= document.querySelector(".container");
+console.log(sel);
+
+sel=document.querySelectorAll(".container");
+console.log(sel);
+
+// events in js
+// ( maine ek function bnaya jisme likha or jitna br click krege utna bar batega)
 
 
+/*function clicked(){
+    console.log("the button was clicked");  // (click pe click krne se the button was clicked likha jaega)
+}
+container.addEventListener("click",function(){
+    console.log("clicked on container")  // ( cointainer pe click krne se clicked on cointainer aa jaega)
+})
+
+container.addEventListener("mouseover",function(){
+    console.log("mouse on container")  // ( mouse  ko sirf container pe le jane se mouse on container likha hua aa jaega)
+})
+
+container.addEventListener("mouseout", function(){
+    console.log("mouse out of container")  // (mouse ko container se bahar le jane pe likha jaega )
+})    */
 
 
+//  let prevHTML= document.querySelectorAll(".container")[1],innerHTML;
+//  firstContainer.addEventListener("mouseup",function(){
+//    document.querySelectorAll(".container")[1].innerHTML=prevHTML;
+//    console.log("mouse up when clicked on container")
+//  })
+
+// firstContainer.addEvenListener("mousedown", funtion(){
+ //   document.querySelectorAll(".container")[1].innerHTML="<b> we have clicked" </b>"
+ //   console.log("mouse down when clicked on container");
+// })
+
+// Arrow Function
+function summ (a, b){
+ return a+b;
+ }
+
+summ = (a,b)=>{
+    return a+b;
+}
+
+logKaro =()=>{
+    document.querySelector(".container")[1].innerHTML="<b> Set interval fired</b>"
+    console.log("i am your log")
+}
+
+// SetTime and Setintervals
+
+ // clr = setTimeout(logkaro,5000);
+ // clr = setInterval(logkaro , 2000);
+ // use clearInterval(clr) / clearTimeout(clr) to camcel setInterval/setTimeout
+
+ // #  javascript localstorage
+ 
+ localStorage.setItem("name", "harry")
+  localStorage
+ localStorage.getItem("name") 
+
+ // Json
+  
+ obj = {name : "harry", length:1}
+  jso = JSON.stringify (obj);
+  console.log( typeof jso);
