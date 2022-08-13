@@ -5,8 +5,8 @@
     <body>
         <center>
             <input type="button"  onclick="download();" value="download" name="downloadbutton" id="downloadbuttoon">
-            <input type="button"  value="Online"    name="onlinebutton"  id="loadingbutton">
-            <input type="button" value="Torent"   name="torentbutton"   id="torentbutton">
+            <input type="button"  onclick="online();"  value="Online"    name="onlinebutton"  id="loadingbutton">
+            <input type="button"  onclick="torent();"  value="Torent"   name="torentbutton"   id="torentbutton">
       
 
         </center>
@@ -14,6 +14,15 @@
         <script>
             function download(){
                 console.log("download starts in 3 sec");
+                online();
+            }
+
+            function online(){
+                console.log("Please wait while loading");
+            }
+
+            function torent(){
+                console.log("Copied magnet link");
             }
          
         </script>
