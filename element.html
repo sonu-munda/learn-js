@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Element Methods
+        </title>
+    </head>
+    <body>
+        <h1 id="first"> Welcome to the Element Methods</h1>
+        <p id="second"> know how element methods get worked</p>
+        <h2> simple knowledge of javascript</h2>
+        <div class="right">what is your name</div>
+    </body>
+    <script>
+        let r=document.getElementById("second");
+        r=r.innerText="go to my house";
+       
+        document.write(r);
+        console.log(r);
+        r=r.innerHTML="<b>go to my house</b>";
+
+        let m=document.getElementsByClassName("right");
+        document.write(m);
+        console.log(m);
+    </script>
+</html>
